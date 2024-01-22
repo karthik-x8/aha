@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="icon" href="ahalogo-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <script>
+        function validate() {
+            var up = /^[6-9]{1}[0-9]{9}$/;  // Updated regex pattern for Indian phone numbers
+            var uv = document.getElementById("phno").value;
+
+            if (uv == "") {
+                document.getElementById("msg").innerHTML = "Enter the phone number.";
+                return false;
+            }
+
+            if (!uv.match(up)) {
+                document.getElementById("msg").innerHTML = "Please Enter a valid Indian phone number.";
+                return false;
+            }
+
+            // Redirect to index.html
+            window.location.href = "index.html";
+            return false;
+        }
+    </script>
+
+    <style>
+        .car {
+            background-image: linear-gradient(black,grey,black);
+            padding-top: 0px;
+            padding-bottom: 60px;
+        }
+        .body {
+            margin-left: 200px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.368), grey);
+            margin-right: 200px;
+            margin-top: 0px;
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-top: 150px;
+            padding-bottom: 100px;
+            border-radius: 80px;
+            box-shadow: 5px 2px rgb(12, 12, 12);
+        }
+        .form-control {
+            background-image: url(icons8-india-48.png);
+            background-size: 40px;
+            background-position: 10px center;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            width: 200px;
+            height: 100px;
+        }
+        .form-control::placeholder {
+            transform: scale(1.1);
+        }
+        .title {
+            color: whitesmoke;
+            margin-top: -30px;
+        }
+        .img {
+            display: flex;
+            margin-left: -20px;
+            gap: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="car">
+        <img src="ahalogo-removebg-preview.png" alt="" height="60px">
+
+        <div class="body">
+            <form onsubmit="return validate()">
+                <div style="display: flex;" class="title">
+                    <a href="index.html">
+                        <img src="icons8-left-arrow-50.png" style="padding-top: -80px; margin-left: -50px; margin-right: 30px;" alt="" height="50px">
+                    </a>
+                    <h1 class="title">LET'S GET
+                        <br>
+                        STARTED.</h1>
+                </div>
+                <h5 style="color:whitesmoke;">Mobile number</h5>
+
+                <input type="text" id="phno"  class="form-control" placeholder="      |+91" style="width:300px;height:50px;">
+
+                <span id="msg" style="color: red;"></span><br>
+                <h6 style="color: whitesmoke;">Or, Use one of the following options</h6><br>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <input type="submit" id="submitButton" style="border-radius:12px;height:50px; margin-left: -70px; background-color: rgb(255, 111, 0);">
+                </div><br>
+                <div class="img">
+                    <a href="mailto:support@aha.video" style="border: 1px solid black; border-radius: 12px; padding:10px;"><img src="icons8-email-48.png" alt=""></a>
+                    <a href="https://www.facebook.com/ahavideoIN/" style="border: 1px solid black; border-radius: 12px; padding:10px;"><img src="icons8-facebook-48 (1).png" alt=""></a>
+                    <a href="https://www.google.com/search?q=aha+google&sca_esv=599887976&rlz=1C1CHBF_enIN1083IN1083&sxsrf=ACQVn08aT8GwJUonhA61qpWztkKCe0lTzA%3A1705696094537&ei=XtuqZaO5IPHE4-EP16CQyA4&ved=0ahUKEwij4LyOpeqDAxVx4jgGHVcQBOkQ4dUDCBA&uact=5&oq=aha+google&gs_lp=Egxnd3Mtd2l6LXNlcnAiCmFoYSBnb29nbGUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABgWGB4YCjIGEAAYFhgeMggQABgWGB4YD0iFL1ClAliSLXABeAGQAQCYAXWgAcgLqgEENC4xMLgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgoQIxiABBiKBRgnwgILEAAYgAQYigUYhgPCAgsQLhivARjHARiABMICCBAAGIAEGMsBwgILEAAYgAQYigUYkQLCAgUQLhiABMICChAAGIAEGBQYhwLCAgQQIxgnwgIREAAYgAQYigUYkQIYsQMYgwHCAgwQABiABBiKBRhDGArCAg4QABiABBiKBRiRAhixA8ICChAAGIAEGIoFGEPCAg0QABiABBiKBRhDGLEDwgINEC4YgAQYigUYQxixA8ICChAAGIAEGAoYsQPCAgcQABiABBgKwgIKEC4YgAQYChjlBOIDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp" style="border: 1px solid black; border-radius: 12px; padding:10px;"><img src="icons8-google-48.png" alt=""></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

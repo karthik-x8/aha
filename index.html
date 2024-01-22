@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aha</title>
+    <link rel="icon" href="ahalogo-removebg-preview.png ">
+    <link rel="stylesheet" href="aha.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <img src="aha.png" alt="" height="30px">
+        <a href="index.html">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#shows">Shows</a>
+        <a href="#free">Watch for free</a>
+        <a href="signin.html">My aha</a>
+        <a href="search.html" style="margin-left: 150px; margin-top: px;"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+        </a>
+        <a href="lanaguage.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+              </svg>
+        </a>
+        <a href="subscribe.html">
+            <button class="button">Subscribe Now</button>
+        </a>
+        <a href="signin.html">
+            <img src="user image.png" alt="" height="30px" width="30px">Sign in
+        </a>    
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 2"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img2.jpg" class="d-block w-100 h-50" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img3.jpg" class="d-block w-100 h-50" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img4.jpg" class="d-block w-100 h-50" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img5.jpg" class="d-block w-100 h-50" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img6.jpg" class="d-block w-100 h-50" alt="...">
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>   
+
+
+      <nav class="title1">
+        <a href="#" class="title1" ><p id="movies"><b>New Releases</b></p></a>
+    <a href="#" class="title1"><p><b>see all</b></p></a>
+    </nav>
+<div>
+    <div class="flex-container"  class="carousel-inner">
+        <div class="newr" class="carousel-item active">
+            <div class="img" >
+               <a href=""> <img src="newr1.jpg" alt="" height="200px" width="140px" ></a>
+                <p class="para">Kota Bommali p.s</p>
+            </div>
+        </div>
+    
+        <div class="newr">
+            <div class="img">
+                <a href="#"><img src="newr2.jpg" alt="" height="200px" width="140px"></a>
+                <p class="para">Keeda Cola</p>
+            </div>
+        </div>
+    
+        <div class="newr">
+            <div class="img">
+                <a href="#"><img src="newr3.jpg" alt="" height="200px" width="140px"></a>   
+             <p class="para">Polimera - 2</p>
+            </div>
+        </div>
+        
+        <div class="newr">
+            <div class="img">
+               <a href="#"> <img src="newr4.jpg" alt="" height="200px" width="140px"></a>
+                <p class="para">Month of Madhu</p>
+            </div>
+        </div>
+        <div class="newr">
+            <div class="img">
+                <a href="#"><img src="newr5.jpg" alt="" height="200px" width="140px"></a>
+                <p class="para">The Road</p>
+            </div>
+        </div>
+        <div class="newr">
+            <div class="img">
+                <a href="#"><img src="newr6.jpg" alt="" height="200px" width="140px"></a>
+                <p class="para">Rules Ranjan</p>
+            </div>
+        </div>
+        </div>   
+
+        <nav class="title1">
+            <a href="#" class="title1" ><p id="movies"><b> BlockBusters</b></p></a>
+        <a href="#" class="title1"><p><b>see all</b></p></a>
+        </nav>
+    <div>
+        <div class="flex-container"  class="carousel-inner">
+            <div class="newr" class="carousel-item active">
+                <div class="img" >
+                   <a href="#"> <img src="festb1.jpg" alt="" height="200px" width="140px" ></a>
+                    <p class="para">Samajavaragamna</p>
+                </div>
+            </div>
+        
+            <div class="newr">
+                <div class="img">
+                    <a href="#"><img src="festb2.jpg" alt="" height="200px" width="140px"></a>
+                    <p class="para">Kalyanam kamaniyam</p>
+                </div>
+            </div>
+        
+            <div class="newr">
+                <div class="img">
+                    <a href="#"><img src="festb3.jpg" alt="" height="200px" width="140px"></a>   
+                 <p class="para">Kalsam</p>
+                </div>
+            </div>
+            
+            <div class="newr">
+                <div class="img">
+                   <a href="#"> <img src="festb4.jpg" alt="" height="200px" width="140px"></a>
+                    <p class="para">Athadu</p>
+                </div>
+            </div>
+            <div class="newr">
+                <div class="img">
+                    <a href="#"><img src="festb5.jpg" alt="" height="200px" width="140px"></a>
+                    <p class="para">Krack</p>
+                </div>
+            </div>
+            <div class="newr">
+                <div class="img">
+                    <a href="#"><img src="festb6.jpg" alt="" height="200px" width="140px"></a>
+                    <p class="para">Pushpaka Vimanam</p>
+                </div>
+            </div>
+            </div>   
+
+         <nav class="title1">
+                <a href="#" class="title1" ><p id="free"><b>Free Movies</b></p></a>
+            <a href="#" class="title1"><p><b>see all</b></p></a>
+            </nav>
+        <div>
+            <div class="flex-container"  class="carousel-inner">
+                <div class="newr" class="carousel-item active">
+                    <div class="img" >
+                       <a href="#"> <img src="free1.jpg" alt="" height="200px" width="140px" ></a>
+                        <p class="para">Khaki</p>
+                    </div>
+                </div>
+            
+                <div class="newr">
+                    <div class="img">
+                        <a href="#"><img src="free2.jpg" alt="" height="200px" width="140px"></a>
+                        <p class="para">Konchem istam konchem kastam</p>
+                    </div>
+                </div>
+            
+                <div class="newr">
+                    <div class="img">
+                        <a href="#"><img src="free3.jpg" alt="" height="200px" width="140px"></a>   
+                     <p class="para">Jalsa</p>
+                    </div>
+                </div>
+                
+                <div class="newr">
+                    <div class="img">
+                       <a href="#"> <img src="free4.jpg" alt="" height="200px" width="140px"></a>
+                        <p class="para">Thupaki</p>
+                    </div>
+                </div>
+
+                <div class="newr">
+                    <div class="img">
+                        <a href="#"><img src="free5.jpg" alt="" height="200px" width="140px"></a>
+                        <p class="para">life is beautiful</p>
+                    </div>
+                </div>
+
+                <div class="newr">
+                    <div class="img">
+                        <a href="#"><img src="free6.jpg" alt="" height="200px" width="140px"></a>
+                        <p class="para">Mass</p>
+                    </div>
+            </div>
+        </div>
+            
+        <nav class="title1">
+            <a href="#" class="title1" ><p><b>Recently Added</b></p></a>
+        <a href="#" class="title1"><p><b>see all</b></p></a>
+        </nav>
+    <div>
+        <div class="flex-container"  class="carousel-inner">
+            <div class="newr" class="carousel-item active">
+                <div class="img" >
+                   <a href="#"> <img src="recent1.jpg" alt="" height="200px" width="140px" ></a>
+                    <p class="para">Lingocha</p>
+                </div>
+            </div>
+        
+            <div class="newr">
+                <div class="img">
+                    <a href="#"><img src="recent2.jpg" alt="" height="200px" width="140px"></a>
+                    <p class="para">Rakshasa</p>
+                </div>
+            </div>
+        
+            <div class="newr">
+                <div class="img">
+                    <a href="#"><img src="recent3.jpg" alt="" height="200px" width="140px"></a>   
+                 <p class="para">Mattikatha</p>
+                </div>
+            </div>
+            
+            <div class="newr">
+                <div class="img">
+                   <a href="#"> <img src="recent4.jpg" alt="" height="200px" width="140px"></a>
+                    <p class="para">Mr Karthik</p>
+                </div>
+            </div>
+            
+            <div class="newr">
+                <div class="img">
+                    <a href="#"><img src="recent5.jpg" alt="" height="200px" width="140px"></a>
+                    <p class="para">100 days of love</p>
+                </div>
+            </div>
+
+            <div class="newr">
+                <div class="img">
+                    <a href="#"><img src="recent6.jpg" alt="" height="200px" width="140px"></a>
+                    <p class="para">Bheemla Nayak</p>
+                </div>
+        </div>
+    </div>
+           
+    
+    <nav class="title1">
+        <a href="#" class="title1" ><p id="shows"><b>aha original shows | first ep free</b></p></a>
+    </nav>
+<div>
+    <div class="flex-container"  class="carousel-inner">
+        <div class="newr" class="carousel-item active">
+            <div class="img" >
+               <a href="#"> <img src="ep1.jpg" alt="" height="200px" width="140px" ></a>
+                <p class="para">Papampasivadu</p>
+            </div>
+        </div>
+    
+        <div class="newr">
+            <div class="img">
+                <a href="#"><img src="ep2.jpg" alt="" height="200px" width="140px"></a>
+                <p class="para">Arunkumar</p>
+            </div>
+        </div>
+    
+        <div class="newr">
+            <div class="img">
+                <a href="#"><img src="ep3.jpg" alt="" height="200px" width="140px"></a>   
+             <p class="para">Newsense</p>
+            </div>
+        </div>
+        
+        <div class="newr">
+            <div class="img">
+               <a href="#"> <img src="ep4.jpg" alt="" height="200px" width="140px"></a>
+                <p class="para">Geetha subramanyam-3</p>
+            </div>
+        </div>
+        
+        <div class="newr">
+            <div class="img">
+                <a href="#"><img src="ep5.jpg" alt="" height="200px" width="140px"></a>
+                <p class="para">Tharagadi dati</p>
+            </div>
+        </div>
+
+        <div class="newr">
+            <div class="img">
+                <a href="#"><img src="ep6.jpg" alt="" height="200px" width="140px"></a>
+                <p class="para">Sin</p>
+            </div>
+    </div>
+</div>
+       
+<div class="footer">
+<div>
+    <img src="ahalogo-removebg-preview.png" alt="" height="70px" width="100px">
+    <br>
+    <p style="color: aliceblue; ">connect with us</p>
+    <a href="https://www.instagram.com/ahavideoin/"><img src="icons8-insta-48.png" alt=""></a>
+    <a href="https://www.facebook.com/ahavideoIN/"><img src="icons8-facebook-48 (1).png" alt=""></a>
+    <a href="https://www.youtube.com/channel/UCmO-jDLU-KUcweCzktuDsbg"><img src="icons8-youtube-48 (1).png" alt=""></a>
+    <a href="https://twitter.com/ahavideoIN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="icons8-twitter-48 (1).png" alt=""></a>
+    <br>
+    <p style="color: aliceblue; ">Download the Aha app</p>
+    <a href="https://twitter.com/ahavideoIN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="google play .png" alt="" height="30px"></a>
+    <a href="https://apps.apple.com/in/app/aha-100-local-entertainment/id1488739001"><img src="appstore.png" alt="" height="30px"></a><br><br>
+    <img src="icons8-email-48.png" alt="" style="background: #595757;" height="40px"><p style="color: aliceblue; ">Contact Us: <a href="" style="text-decoration:line; color: orange;">support@aha.video</a></p>
+   
+</div>
+    <div >
+        <p style="color: aliceblue; font-size:20px ; ">Popular Telugu movies</p>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516); font-size: 13px; ">Masooda</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Sardar</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Ori Devuda</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Swathi Muthyam</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">DJ Tillu</p></a>
+    </div>
+
+    <div >
+        <p style="color: aliceblue; font-size:20px ; ">Must Watch movies</p>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516); font-size: 13px; ">Hidimba</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Samajavaragamana</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Intinti Ramayanam</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Sathi gani rendu ekaralu</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Das ka damki</p></a>
+    </div>
+
+    <div >
+        <p style="color: aliceblue; font-size:20px ; ">Genres</p>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516); font-size: 13px; ">Telugu Drama Movies</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Telugu Comedy Movies</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Telugu Action Movies</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Telugu Romance Movies</p></a>
+    </div>
+    <div >
+        <p style="color: aliceblue; font-size:20px ; ">Learn More</p>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516); font-size: 13px; ">View Plans</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">About US</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">FAQs/Help</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Privacy Policy</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Terms of Service</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516); font-size: 13px; ">Grievance Redressal</p></a>
+            <a href="" style="text-decoration:none;"><p style="color:rgba(240, 248, 255, 0.516);font-size: 13px; ">Bolg</p></a>
+
+    </div>
+</div>
+<div class="footer1">
+    <hr style="color: aliceblue;">
+    <p style="color: aliceblue; font-size:13px ; ">© Copyright 2024 Arha Media and Broadcasting Pvt Ltd. All rights reserved.
+    </p>
+
+</div>
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+        
+    
+    
+    
+    
+
+
+
+      
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
